@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #level6-container {
+            position: relative;
+        }
+
+        #submit-btn {
+            position: relative;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        #checkbox-container {
+            text-align: left;
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess the password!</h1>
+
+    <div id="game-container">
+        <h2>Level 1</h2>
+        <label for="password-input">Enter password:</label>
+        <input type="text" id="password-input">
+        <button id="submit-btn" onclick="checkPassword()">Submit</button>
+        <p id="level3-hint" class="hidden">Password: 12345678</p>
+        <div id="level4-menu" class="hidden">
+            <button id="password-finder" onclick="openMenu()">Password Finder</button>
+            <div id="checkbox-container" class="hidden">
+                <input type="checkbox" id="checkbox-1"> I agree to the terms and conditions<br>
+                <input type="checkbox" id="checkbox-2" class="hidden"> I totally agree<br>
+                <input type="checkbox" id="checkbox-3" class="hidden"> I definitely agree<br>
+                <input type="checkbox" id="checkbox-4" class="hidden"> I promise I agree<br>
+                <input type="checkbox" id="checkbox-5" class="hidden"> I definitely promise I agree<br>
+                <input type="checkbox" id="checkbox-6" class="hidden"> I don't not agree<br>
+                <input type="checkbox" id="checkbox-7" class="hidden"> I obviously don’t not not agree<br>
+                <button onclick="confirmPassword()">Confirm</button>
+            </div>
+        </div>
+
+        <div id="level6-container" class="hidden">
+            <h2>Level 6</h2>
+            <label for="password-input-level6">Enter password:</label>
+            <input type="text" id="password-input-level6">
+            <button id="submit-btn" onmousedown="dragButton(event)">Submit</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
