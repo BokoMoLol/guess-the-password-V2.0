@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#level6-container {
+    position: relative;
+}
+
+#submit-btn {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#checkbox-container {
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
