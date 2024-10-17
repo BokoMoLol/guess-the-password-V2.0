@@ -4,44 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Guessing Game</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        #level6-container {
-            position: relative;
-        }
-
-        #submit-btn {
-            position: relative;
-            cursor: pointer;
-        }
-
-        input[type="checkbox"] {
-            margin: 10px;
-        }
-
-        button {
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-
-        #checkbox-container {
-            text-align: left;
-            width: 300px;
-            margin: 0 auto;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
 </head>
 <body>
     <h1>Guess the password!</h1>
@@ -52,6 +15,7 @@
         <input type="text" id="password-input">
         <button id="submit-btn" onclick="checkPassword()">Submit</button>
         <p id="level3-hint" class="hidden">Password: 12345678</p>
+
         <div id="level4-menu" class="hidden">
             <button id="password-finder" onclick="openMenu()">Password Finder</button>
             <div id="checkbox-container" class="hidden">
@@ -76,6 +40,6 @@
         <p id="message"></p>
     </div>
 
-    <script src="game.js"></script>
+    <script src="game.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
